@@ -34,7 +34,7 @@ lookup tables for those three letters and perform a bitwise AND operation on
 them to rapidly generate a set that contains only words which fit the slot.
 
 After a slot's playable words have been determined, xwords looks at the empty
-tiles in the slot and creates a bit set of words that the players hand could
+tiles in the slot and creates a bit set of words that the player's hand could
 fill in for that slot.  (This is done iteratively.)  The resulting set is again
 AND'ed with the playable words for that slot to determine exactly which words
 both fit the slot and can be formed from the player's hand.  After this, checks
