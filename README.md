@@ -4,7 +4,7 @@ family at the popular board game Scrabble.  It is written in Java and makes use
 of bit sets and set theory to efficiently search for playable moves in real
 time.
 
-##Move Searches
+## Move Searches
 When a word dictionary is loaded (typically when the program first starts),
 xwords creates lookup tables as bit sets based on the positions of letters in
 each word.  For example, suppose there are 10,000 words that are 5 letters
