@@ -30,7 +30,7 @@ length 5 and contains an 'R' in the fifth position.)  It would normally take a
 non-trivial amount of time to iterate through several thousand words and create
 a list of the ones that contain an 'R' at a certain index.  However, thanks to
 the lookup tables that were created when the dictionary was loaded, this list
-has already been made for us.  What's more, if we have a more complex slot, for
+has already been made for us!  What's more, if we have a more complex slot, for
 example one which has three letters already set, we can simply retrieve the
 lookup tables for those three letters and perform a bitwise AND operation on
 them to rapidly generate a set that contains only words which fit the slot.
