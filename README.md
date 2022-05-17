@@ -22,16 +22,16 @@ containing or adjacent to the letters played.
 
 ![Example of a slot, highlighted](/xwords-slot.png)
 
-As can be seen above, each slot has a set length and likely contains one or
-more fixed letters.  (The highlighted slot is of length 5 and contains an 'R'
-in the fifth position.)  It would normally take a non-trivial amount of time to
-iterate through several thousand words and create a list of the ones that
-contain an 'R' at a certain index.  However, thanks to the lookup tables that
-were created when the dictionary was loaded, this list has already been made
-for us.  What's more, if we have a more complex slot, for example one which
-has three letters already set, we can simply retrieve the lookup tables for
-those three letters and perform a bitwise AND operation on them to rapidly
-generate a set that contains only words which fit the slot.
+A slot highlighted in red is shown above.  Each slot has a set length and
+typically contains one or more fixed letters.  (The highlighted slot is of
+length 5 and contains an 'R' in the fifth position.)  It would normally take a
+non-trivial amount of time to iterate through several thousand words and create
+a list of the ones that contain an 'R' at a certain index.  However, thanks to
+the lookup tables that were created when the dictionary was loaded, this list
+has already been made for us.  What's more, if we have a more complex slot, for
+example one which has three letters already set, we can simply retrieve the
+lookup tables for those three letters and perform a bitwise AND operation on
+them to rapidly generate a set that contains only words which fit the slot.
 
 After a slot's playable words have been determined, xwords looks at the empty
 tiles in the slot and creates a bit set of words that the players hand could
