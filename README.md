@@ -17,7 +17,7 @@ reason for this lookup table generation will become clear later.
 
 Searches work by dividing the current board state into 'slots' which represent
 locations where a word could theoretically be played.  Each slot is 2-15 tiles
-in length.  At the start of the game, there are a couple dozen valid slots
+in length.  At the start of the game, there are a few dozen valid slots
 surrounding the center tile, none of which contain any letters.  After the
 first word is played, playable slots surround the letters on the board,
 containing or adjacent to the letters played.
