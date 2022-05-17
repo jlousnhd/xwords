@@ -20,6 +20,8 @@ surrounding the center tile, none of which contain any letters.  After the
 first word is played, playable slots surround the letters on the board,
 containing or adjacent to the letters played.
 
+![Example of a slot, highlighted](/xwords-slot.png)
+
 As can be seen above, each slot has a set length and likely contains one or
 more fixed letters.  (The highlighted slot is of length 5 and contains an 'R'
 in the fifth position.)  It would normally take a non-trivial amount of time to
