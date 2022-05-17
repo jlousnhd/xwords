@@ -1,8 +1,10 @@
 # xwords
-Xwords is a word-finder for crossword-style games that I developed to best my
-family at the popular board game Scrabble.  It is written in Java and makes use
-of bit sets and set theory to efficiently search for playable moves in real
-time.
+Xwords is a word-finder for crossword-style games that I developed in 2014 to
+best my family at the popular board game Scrabble.  It is written in Java and
+makes use of bit sets and set theory to efficiently search for playable moves.
+The user interface was written using Swing, and move searches occur in real
+time on a separate thread, resulting in a fast and highly responsive user
+interface.
 
 ## Move Searches
 When a word dictionary is loaded (typically when the program first starts),
